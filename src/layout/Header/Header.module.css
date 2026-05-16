@@ -1,0 +1,46 @@
+.logo {
+    width: 90px;
+}
+
+.menu_button {
+    border: none;
+}
+
+.menu_button > span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.menu_container {
+    padding-top: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    --bs-offcanvas-width: 200px;
+
+    background: linear-gradient(rgba(0,0,0,0.852), rgba(0,0,0,0.852)), url("../../assets/img/info-slide/fundo-info-slide.png");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.link_menu {
+    letter-spacing: .5px;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.menu_btn {
+    font-size: 12px;
+    background-color: #9A6700;
+}
+
+.castoro_regular_italic {
+  font-family: "Castoro", serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.julius_sans_one_regular {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

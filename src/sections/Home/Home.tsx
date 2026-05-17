@@ -27,8 +27,31 @@ function Home() {
     let containerImgWidth = (330+10) * currentIndex
     let containerInfoWidth = (240+10) * currentIndex
 
+    // Touch
+
+    let touchStartX = 0
+    let touchEndX = 0
+
+    const handleTouchStart = (e: any) => {
+        touchStartX = e.changedTouches[0].screenX
+    }
+
+    const handleTouchEnd = (e: any) => {
+        touchEndX = e.changedTouches[0].screenX
+
+        const diff = touchStartX - touchEndX
+
+        if(diff > 50) {
+            nextSlide()
+        }
+
+        if(diff < -50) {
+            prevSlide()
+        }
+    }
+
     return (
-        <section className={`${styles.home_section} d-flex flex-column`}>
+        <section className={`${styles.home_section} d-flex flex-column`} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             <div className="d-flex flex-column align-items-center">
                 <div className={`${styles.slider_container_img} overflow-hidden position-relative`}>
                     <ul className={`${styles.slider_img} d-flex position-absolute`} style={{ transform: `translateX(-${containerImgWidth}px` }}>

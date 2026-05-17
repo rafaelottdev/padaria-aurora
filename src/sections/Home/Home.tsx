@@ -4,12 +4,22 @@ import img3 from "../../assets/img/slide-home/3.webp"
 import img4 from "../../assets/img/slide-home/4.webp"
 import img5 from "../../assets/img/slide-home/5.jpg"
 import img6 from "../../assets/img/slide-home/6.jpg"
+
+import coffee from "../../assets/img/Info-slide/coffee.png"
+import coxinha from "../../assets/img/Info-slide/coxinha.png"
+import bolo from "../../assets/img/Info-slide/bolo.png"
+import croassant from "../../assets/img/Info-slide/croassant.png"
+import pedacoBolo from "../../assets/img/Info-slide/pedaço de bolo.png"
+import pao from "../../assets/img/Info-slide/pão.png"
+
 import InfoSlide from "./InfoSlide/InfoSlide"
 
 import styles from "./Home.module.css"
 import { useState } from "react"
 
 function Home() {
+    const urlImgList: string[] = [coffee, coxinha, bolo,croassant, pedacoBolo, pao]
+
     const [currentIndex, setCurrentIndex] = useState<number>(0)
 
     const prevSlide = () => {
@@ -54,7 +64,7 @@ function Home() {
         <section className={`${styles.home_section} d-flex flex-column`} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             <div className="d-flex flex-column align-items-center">
                 <div className={`${styles.slider_container_img} overflow-hidden position-relative`}>
-                    <ul className={`${styles.slider_img} d-flex position-absolute`} style={{ transform: `translateX(-${containerImgWidth}px` }}>
+                    <ul className={`${styles.slider_img} d-flex position-absolute`} style={{ transform: `translateX(-${containerImgWidth}px)` }}>
                         <li className={styles.slider_item}>
                             <img src={img1} alt="Mesa com café e outros"/>
                         </li>
@@ -83,17 +93,17 @@ function Home() {
 
                 <div className={`${styles.slider_container_info} overflow-hidden position-relative`}>
                     <ul className={`${styles.slider_info} d-flex position-absolute`} style={{ transform: `translateX(-${containerInfoWidth}px)` }}>
-                        <InfoSlide title="Cappuccino Especial" price="R$12,90" quant="300ML" int="Intensidade Média" acom="Chocolate" desc="Café expresso com leite vaporizado, chocolate e canela." />
+                        <InfoSlide title="Cappuccino Especial" url={urlImgList[0]} price="R$12,90" quant="300ML" int="Intensidade Média" acom="Chocolate" desc="Café expresso com leite vaporizado, chocolate e canela." />
 
-                        <InfoSlide title="Salgados Artesanais" price="R$18,90" quant="6 Unidades" int="Frito na Hora" acom="Molho Especial" desc="Coxinhas e quibes dourados, crocantes por fora e recheados" />
+                        <InfoSlide title="Salgados Artesanais" url={urlImgList[1]} price="R$18,90" quant="6 Unidades" int="Frito na Hora" acom="Molho Especial" desc="Coxinhas e quibes dourados, crocantes por fora e recheados" />
 
-                        <InfoSlide title="Bolo de Chocolate" price="R$14,90" quant="Generosa" int="Chocolate Cremoso" acom="Café Expresso" desc="Massa fofinha com chocolate intenso e cobertura cremosa" />
+                        <InfoSlide title="Bolo de Chocolate" url={urlImgList[2]} price="R$14,90" quant="Generosa" int="Chocolate Cremoso" acom="Café Expresso" desc="Massa fofinha com chocolate intenso e cobertura cremosa" />
 
-                        <InfoSlide title="Café da Tarde" price="R$24,90" quant="2 Pessoas" int="Café Especial" acom="Croissant Artesanal" desc="Uma combinação aconchegante com café fresco e croissant" />
+                        <InfoSlide title="Café da Tarde" url={urlImgList[3]} price="R$24,90" quant="2 Pessoas" int="Café Especial" acom="Croissant" desc="Uma combinação aconchegante com café fresco e croissant" />
 
-                        <InfoSlide title="Doces da Vitrine" price="A partir de R$6,90" quant="Artesanal" int="Doces Frescos" acom="Café ou Cappuccino" desc="Uma seleção irresistível de doces preparados diariamente" />
+                        <InfoSlide title="Doces da Vitrine" url={urlImgList[4]} price="A partir de R$6,90" quant="Artesanal" int="Doces Frescos" acom="Café" desc="Uma seleção irresistível de doces preparados diariamente" />
 
-                        <InfoSlide title="Pães Tradicionais" price="A partir de R$3,90" quant="Fresquinha do Dia" int="Receita Artesanal" acom="Manteiga na Chapa" desc="Pães macios e dourados, assados diariamente" />
+                        <InfoSlide title="Pães Tradicionais" url={urlImgList[5]} price="A partir de R$3,90" quant="Fresquinha do Dia" int="Receita Artesanal" acom="Manteiga" desc="Pães macios e dourados, assados diariamente" />
                     </ul>
                 </div>
             </div>

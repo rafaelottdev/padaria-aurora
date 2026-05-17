@@ -1,9 +1,8 @@
-import coffeeLogo from "../../../assets/img/Info-slide/coffee.png"
-
 import styles from "./InfoSlide.module.css"
 
 type info = {
     title: string,
+    url: string,
     price: string,
     quant: string,
     int: string,
@@ -11,13 +10,13 @@ type info = {
     desc: string
 }
 
-function InfoSlide({ title, price, quant, int, acom, desc }: info) {
+function InfoSlide({ title, url, price, quant, int, acom, desc }: info) {
     return (
         <li className={styles.infoCardSlide}>
             <div className={`${styles.title_container} d-flex align-items-center justify-content-between`}>
                 <h3>{title}</h3>
 
-                <img src={coffeeLogo} />
+                <img src={url} />
             </div>
 
             <div className={styles.infoCard_info_container}>
@@ -41,7 +40,7 @@ function InfoSlide({ title, price, quant, int, acom, desc }: info) {
                     </li>
                     
                     <li className="d-flex justify-content-between">
-                        <p>Acompanha</p>
+                        <p>Acompanha:</p>
 
                         <p>{acom}</p>
                     </li>

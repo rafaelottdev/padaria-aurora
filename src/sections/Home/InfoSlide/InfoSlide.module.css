@@ -1,0 +1,53 @@
+p {
+    margin: 0;
+}
+
+.infoCardSlide {
+    width: 240px;
+    height: 380px;
+
+    padding: 20px 10px 0px 10px;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.564), rgba(0,0,0,0.564)), url("../../../assets/img/info-slide/fundo-info-slide.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        50% 87%,
+        0 100%
+    );
+
+    color: white;
+}
+
+.title_container {
+    margin-bottom: 20px;
+}
+
+.title_container > h3 {
+    width: 160px;
+    font-family: Kavoon, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.title_container > img {
+    width: 35px;
+}
+
+.infoCard_info_container {
+    font-family: Josefin Slab, sans-serif;
+}
+
+.infoCard_list {
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.description {
+    font-family: Josefin Slab, sans-serif;
+}

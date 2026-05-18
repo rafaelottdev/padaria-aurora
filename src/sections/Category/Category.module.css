@@ -1,0 +1,62 @@
+.category_section {
+    padding: 30px;
+}
+
+.category_header {
+
+}
+
+.category_list {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)), url("../../assets/img/info-slide/fundo-info-slide.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 5px;
+}
+
+.category_list > li {
+    flex: 1;
+}
+
+.category_list > li > a {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 6px;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    color: white;
+
+    font-family: "Julius Sans One";
+    text-decoration: none;
+}
+
+.category_list > li > a:hover {
+    background-color: #9A6700;
+}
+
+.category_body {
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)), url("../../assets/img/info-slide/fundo-info-slide.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}

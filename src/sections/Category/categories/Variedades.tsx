@@ -1,8 +1,8 @@
 import CategoryCard from "../../../components/CategoryCard"
 
 import img1 from "../../../assets/img/cards/cards-variedades/pao.webp"
-import img2 from "../../../assets/img/cards/cards-variedades/pao-na-chapa.jpg"
-import img3 from "../../../assets/img/cards/cards-variedades/cookies.jpg"
+import img2 from "../../../assets/img/cards/cards-variedades/pao-chapa.webp"
+import img3 from "../../../assets/img/cards/cards-variedades/cookies.webp"
 
 const Variedades = () => {
     return (

@@ -1,8 +1,8 @@
 import CategoryCard from "../../../components/CategoryCard"
 
 import img1 from "../../../assets/img/cards/cards-doces/sonho.webp"
-import img2 from "../../../assets/img/cards/cards-doces/banana.jpg"
-import img3 from "../../../assets/img/cards/cards-doces/brigadeiro.jpg"
+import img2 from "../../../assets/img/cards/cards-doces/banana.webp"
+import img3 from "../../../assets/img/cards/cards-doces/brigadeiro.webp"
 import img4 from "../../../assets/img/cards/cards-doces/rocambole.webp"
 
 const Doces = () => {

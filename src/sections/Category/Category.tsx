@@ -34,4 +34,4 @@ function Category() {
 
 export default Category
 
-// Adicionar o bootstrap e deixar as imagens menos pesadas, fundo do site (melhorar), ver porque o fundo dos container n ta aparecendo no mobile
+// fundo do site (melhorar), ver porque o fundo dos container n ta aparecendo no mobile

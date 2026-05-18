@@ -3,7 +3,7 @@ import CategoryCard from "../../../components/CategoryCard"
 import img1 from "../../../assets/img/cards/cards-salgados/coxinha.webp"
 import img2 from "../../../assets/img/cards/cards-salgados/pastel.webp"
 import img3 from "../../../assets/img/cards/cards-salgados/risoles.webp"
-import img4 from "../../../assets/img/cards/cards-salgados/esfirra.jpg"
+import img4 from "../../../assets/img/cards/cards-salgados/esfirra.webp"
 
 const Salgados = () => {
     return (

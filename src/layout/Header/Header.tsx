@@ -1,4 +1,4 @@
-import logo from "../../assets/img/logo/logo.png"
+import logo from "../../assets/img/logo/logo.webp"
 import styles from "./Header.module.css"
 
 function Header() {

@@ -1,8 +1,8 @@
 import CategoryCard from "../../../components/CategoryCard"
 
-import img1 from "../../../assets/img/cards/cards-bebidas/expresso.png"
+import img1 from "../../../assets/img/cards/cards-bebidas/expresso.webp"
 import img2 from "../../../assets/img/cards/cards-bebidas/latte.webp"
-import img3 from "../../../assets/img/cards/cards-bebidas/coca.jpg"
+import img3 from "../../../assets/img/cards/cards-bebidas/coca.webp"
 
 const Bebidas = () => {
     return (

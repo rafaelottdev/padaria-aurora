@@ -3,7 +3,7 @@ import styles from "./Header.module.css"
 
 function Header() {
     return (
-        <header className="px-3 pt-3">
+        <header className={`${styles.header} px-3 pt-3`}>
             <nav className="navbar">
                 <div>
                     <a href="#" className="navbar-brand">

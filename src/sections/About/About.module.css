@@ -3,17 +3,23 @@
 
     gap: 30px;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0,0,0,0.651)), url("../../assets//img/texturas/fundo-2.webp");
+    /* background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0,0,0,0.651)), url("../../assets//img/texturas/fundo-2.webp");
     background-position: top center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .about_container {
     width: 90%;
     padding: 15px;
 
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)), url("../../assets/img/info-slide/fundo-info-slide.webp");
+
+    border-radius: 10px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about_title_wrapp {

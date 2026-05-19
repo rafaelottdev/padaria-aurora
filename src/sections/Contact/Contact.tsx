@@ -14,5 +14,3 @@ function Contact() {
 }
 
 export default Contact
-
-// arrumar o fundo da Category, que muda quando o conteudo tem menos itens, definir altura fixa ou outra coisa

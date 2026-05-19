@@ -1,5 +1,9 @@
 .category_section {
     padding: 30px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../../assets//img/texturas/fundo-2.webp");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .category_list {
@@ -41,6 +45,8 @@
     padding: 20px 30px;
 
     background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)), url("../../assets/img/info-slide/fundo-info-slide.webp");
+
+    border-radius: 10px;
 
     background-size: cover;
     background-repeat: no-repeat;

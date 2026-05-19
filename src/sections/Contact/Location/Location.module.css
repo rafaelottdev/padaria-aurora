@@ -34,6 +34,10 @@
     margin-bottom: 10px;
 }
 
+.location_img_wrapp > img {
+    border-radius: 10px;
+}
+
 .contact_info {
     font-size: 14px;
     font-family: Lancelot, sans-serif;

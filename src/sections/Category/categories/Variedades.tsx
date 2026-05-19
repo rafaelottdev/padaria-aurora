@@ -3,6 +3,7 @@ import CategoryCard from "../../../components/CategoryCard"
 import img1 from "../../../assets/img/cards/cards-variedades/pao.webp"
 import img2 from "../../../assets/img/cards/cards-variedades/pao-chapa.webp"
 import img3 from "../../../assets/img/cards/cards-variedades/cookies.webp"
+import img4 from "../../../assets/img/cards/cards-variedades/muffin.webp"
 
 const Variedades = () => {
     return (
@@ -29,6 +30,14 @@ const Variedades = () => {
                 desc="Massa macia por dentro com gotas de chocolate e bordas crocantes."  
                 price="R$ 8,90"
                 tag="🍪 Assado Hoje"
+            />
+
+            <CategoryCard 
+                img={img4} 
+                title="Muffin" 
+                desc="Macio feito de queijo e bacon"  
+                price="R$ 4,90"
+                tag="🧀 Caseiro"
             />
         </ul>
     )

@@ -4,6 +4,10 @@ ul {
 
 .home_section {
     padding-top: 30px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0,0,0,0.651)), url("../../assets//img/texturas/fundo-2.webp");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .slider_container_img {

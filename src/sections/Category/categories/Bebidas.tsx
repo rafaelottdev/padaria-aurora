@@ -3,6 +3,7 @@ import CategoryCard from "../../../components/CategoryCard"
 import img1 from "../../../assets/img/cards/cards-bebidas/expresso.webp"
 import img2 from "../../../assets/img/cards/cards-bebidas/latte.webp"
 import img3 from "../../../assets/img/cards/cards-bebidas/coca.webp"
+import img4 from "../../../assets/img/cards/cards-bebidas/suco-natural.webp"
 
 const Bebidas = () => {
     return (
@@ -29,6 +30,14 @@ const Bebidas = () => {
                 desc="Refrescância intensa e sabor clássico para acompanhar qualquer momento."  
                 price="R$ 6,90"
                 tag="🧊 Bem Gelada"
+            />
+
+            <CategoryCard 
+                img={img4} 
+                title="Suco Natural" 
+                desc="Suco de manga gelado e feito na hora"  
+                price="R$ 12,90"
+                tag="🥭 Natural"
             />
         </ul>
     )

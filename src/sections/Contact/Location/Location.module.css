@@ -1,0 +1,42 @@
+.location_section {
+    width: 330px;
+    gap: 30px;
+}
+
+.location_title_wrapp {
+    gap: 5px;
+}
+
+.location_title_wrapp > svg {
+    width: 18px;
+}
+
+.location_title_wrapp > h2 {
+    font-size: 21px;
+    font-family: "Julius Sans One", sans-serif;
+    -webkit-text-stroke: 1px #F1A459;
+
+    color: #F1A459;
+}
+
+.location_info_wrapp > p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: Lancelot, sans-serif;
+    letter-spacing: .5px;
+    color: rgba(255, 255, 255, 0.800);
+}
+
+.location_img_wrapp {
+    width: 300px;
+    height: 230px;
+
+    margin-bottom: 10px;
+}
+
+.contact_info {
+    font-size: 14px;
+    font-family: Lancelot, sans-serif;
+    letter-spacing: .5px;
+    color: rgba(255, 255, 255, 0.800);
+}

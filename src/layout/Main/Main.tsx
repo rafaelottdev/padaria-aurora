@@ -2,6 +2,7 @@ import Home from "../../sections/Home/Home"
 import Category from "../../sections/Category/Category"
 import Favorite from "../../sections/Favorite/Favorite"
 import About from "../../sections/About/About"
+import Contact from "../../sections/Contact/Contact"
 
 function Main() {
     return (
@@ -13,6 +14,8 @@ function Main() {
             <Favorite />
 
             <About />
+
+            <Contact />
         </main>
     )
 }

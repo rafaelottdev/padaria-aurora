@@ -1,0 +1,64 @@
+.FormContact_section {
+    width: 330px;
+
+    gap: 30px;
+}
+
+.FormContact_title_container {
+    gap: 5px;
+}
+
+.FormContact_title_container > svg {
+    width: 18px;
+}
+
+.FormContact_title_container > h2 {
+    font-size: 21px;
+    font-family: "Julius Sans One", sans-serif;
+    -webkit-text-stroke: 1px #F1A459;
+
+    color: #F1A459;
+}
+
+.form {
+    gap: 20px;
+}
+
+.form > button {
+    width: 75px;
+
+    padding: 3px 0px;
+
+    font-size: 13px;
+    font-family: "Julius Sans One", sans-serif;
+
+    color: white;
+    background-color: #9A6700;
+}
+
+.desc_input {
+    font-size: 16px;
+    font-family: Lancelot, sans-serif;
+    letter-spacing: .5px;
+    color: rgba(255, 255, 255, 0.800);
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+
+    padding-left: 10px;
+
+    font-size: 18px;
+    font-family: Lancelot, sans-serif;
+
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.500);
+    background-color: transparent;
+}
+
+.textarea_input {
+    height: 100px;
+    padding-top: 5px;
+    resize: none;
+}

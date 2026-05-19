@@ -33,5 +33,3 @@ function Category() {
 }
 
 export default Category
-
-// fundo do site (melhorar), ver porque o fundo dos container n ta aparecendo no mobile

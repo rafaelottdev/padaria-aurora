@@ -1,5 +1,6 @@
 import Home from "../../sections/Home/Home"
 import Category from "../../sections/Category/Category"
+import Favorite from "../../sections/Favorite/Favorite"
 
 function Main() {
     return (
@@ -7,6 +8,8 @@ function Main() {
             <Home />
             
             <Category />
+
+            <Favorite />
         </main>
     )
 }

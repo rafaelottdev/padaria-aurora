@@ -1,0 +1,59 @@
+.about_section {
+    padding: 50px 0px;
+
+    gap: 30px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0,0,0,0.651)), url("../../assets//img/texturas/fundo-2.webp");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_container {
+    width: 90%;
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about_title_wrapp {
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.about_title_wrapp > h2 {
+    font-size: 21px;
+    font-family: "Julius Sans One", sans-serif;
+    -webkit-text-stroke: 1px #F1A459;
+
+    color: #F1A459;
+}
+
+.about_title_wrapp > svg {
+    width: 18px;
+}
+
+.about_text_wrapp {
+    font-family: Lancelot, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.900);
+}
+
+.opening_title_wrapp > h2 {
+    font-size: 24px;
+}
+
+.opening_title_wrapp > svg {
+    width: 16px;
+}
+
+.opening_list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.opening_list > li {
+    font-family: Lancelot, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.900);
+}

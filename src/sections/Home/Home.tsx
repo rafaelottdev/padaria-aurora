@@ -5,12 +5,12 @@ import img4 from "../../assets/img/slide-home/4.webp"
 import img5 from "../../assets/img/slide-home/5.webp"
 import img6 from "../../assets/img/slide-home/6.webp"
 
-import coffee from "../../assets/img/Info-slide/coffee.webp"
-import coxinha from "../../assets/img/Info-slide/coxinha.webp"
-import bolo from "../../assets/img/Info-slide/bolo.webp"
-import croassant from "../../assets/img/Info-slide/croassant.webp"
-import pedacoBolo from "../../assets/img/Info-slide/pedaço-bolo.webp"
-import pao from "../../assets/img/Info-slide/pão.webp"
+import coffee from "../../assets/img/info-slide/coffee.webp"
+import coxinha from "../../assets/img/info-slide/coxinha.webp"
+import bolo from "../../assets/img/info-slide/bolo.webp"
+import croassant from "../../assets/img/info-slide/croassant.webp"
+import pedacoBolo from "../../assets/img/info-slide/pedaço-bolo.webp"
+import pao from "../../assets/img/info-slide/pão.webp"
 
 import InfoSlide from "./InfoSlide/InfoSlide"
 

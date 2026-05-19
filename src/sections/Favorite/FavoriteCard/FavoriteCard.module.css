@@ -1,0 +1,55 @@
+.card {
+    padding: 10px 50px;
+    font-family: Castoro, sans-serif;
+}
+
+.titulo {
+    font-size: 18px;
+    letter-spacing: .3px;
+    margin-bottom: 10px;
+    color: hsla(0, 0%, 100%, 0.900)
+}
+
+.img_wrapp {
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.img_wrapp:hover > img {
+    filter: brightness(50%);
+}
+
+.img_wrapp:hover > button {
+    display: block;
+}
+
+.img_wrapp > img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img_wrapp > button {
+    display: none;
+    padding: 5px 30px;
+
+    font-family: Poppins, sans-serif;
+
+    border-radius: 5px;
+
+    border: 1px solid #D9A441;
+    color: white;
+    background-color: transparent;
+}
+
+.img_wrapp > button:hover {
+    border: none;
+    background-color: #D9A441;
+}
+
+.desc {
+    color: hsla(0, 0%, 100%, 0.800);
+    letter-spacing: .5px;
+}

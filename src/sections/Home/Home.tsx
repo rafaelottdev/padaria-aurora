@@ -9,8 +9,8 @@ import coffee from "../../assets/img/info-slide/coffee.webp"
 import coxinha from "../../assets/img/info-slide/coxinha.webp"
 import bolo from "../../assets/img/info-slide/bolo.webp"
 import croassant from "../../assets/img/info-slide/croassant.webp"
-import pedacoBolo from "../../assets/img/info-slide/pedaço-bolo.webp"
-import pao from "../../assets/img/info-slide/pão.webp"
+import pedacoBolo from "../../assets/img/info-slide/pedaco-bolo.webp"
+import pao from "../../assets/img/info-slide/pao.webp"
 
 import InfoSlide from "./InfoSlide/InfoSlide"
 

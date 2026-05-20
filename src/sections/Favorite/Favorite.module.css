@@ -8,7 +8,8 @@
 }
 
 .favorite_wrapp {
-    width: 330px;
+    /* width: 330px; */
+    width: min(1100px, 90%);
     padding: 30px 0px;
 
     border-radius: 15px;
@@ -51,4 +52,12 @@
     border-bottom-right-radius: 15px;
 
     background-image: linear-gradient(to bottom, #8B5E00, #6E4800);
+}
+
+@media (min-width: 768px) {
+    .favorite_list {
+        flex-direction: row !important;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
 }

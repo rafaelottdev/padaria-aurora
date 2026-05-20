@@ -10,7 +10,8 @@
 }
 
 .about_container {
-    width: 90%;
+    /* width: 90%; */
+    width: min(900px, 90%);
     padding: 15px;
 
     /* border: 1px solid rgba(255, 255, 255, 0.5); */
@@ -62,4 +63,10 @@
     font-family: Lancelot, sans-serif;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.900);
+}
+
+@media (min-width: 768px) {
+    .opening_list {
+        grid-template-columns: repeat(7, 1fr);
+    }
 }

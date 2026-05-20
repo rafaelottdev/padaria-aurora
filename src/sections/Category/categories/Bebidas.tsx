@@ -7,7 +7,7 @@ import img4 from "../../../assets/img/cards/cards-bebidas/suco-natural.webp"
 
 const Bebidas = () => {
     return (
-        <ul className="d-flex flex-column gap-2">
+        <ul className="row g-4 justify-content-center">
             <CategoryCard 
                 img={img1} 
                 title="Café Expresso" 

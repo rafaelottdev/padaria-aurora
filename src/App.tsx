@@ -10,7 +10,9 @@ function App() {
       <div className='page-container'>
         <Header />
 
-        <Outlet />
+        <div  className="section_container">
+          <Outlet />
+        </div>
 
         <Footer />
       </div>

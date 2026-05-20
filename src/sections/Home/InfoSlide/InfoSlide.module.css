@@ -21,7 +21,7 @@ p {
         0 100%
     );
 
-    color: white;
+    color: rgba(255, 255, 255, 0.900);
 }
 
 .title_container {
@@ -50,4 +50,57 @@ p {
 
 .description {
     font-family: Josefin Slab, sans-serif;
+}
+
+@media (min-width: 992px) {
+    .infoCardSlide {
+        width: 290px;
+        height: 480px;
+
+        padding: 30px 20px;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            50% 90%,
+            0 100%
+        );
+
+        color: rgba(255, 255, 255, 0.900);
+    }
+
+    .title_container {
+        margin-bottom: 30px;
+    }
+
+    .title_container > h3 {
+        width: 160px;
+        font-family: Kavoon, sans-serif;
+        font-size: 21px;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+    }
+
+    .title_container > img {
+        width: 45px;
+    }
+
+    .infoCard_info_container {
+        font-family: Josefin Slab, sans-serif;
+    }
+
+    .infoCard_list {
+        margin-bottom: 40px;
+        gap: 35px;
+    }
+
+    .infoCard_list > li > p {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 17px;
+        font-family: Josefin Slab, sans-serif;
+    }
 }

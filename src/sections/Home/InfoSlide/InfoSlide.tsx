@@ -1,3 +1,4 @@
+import { forwardRef } from "react"
 import styles from "./InfoSlide.module.css"
 
 type info = {
@@ -10,9 +11,9 @@ type info = {
     desc: string
 }
 
-function InfoSlide({ title, url, price, quant, int, acom, desc }: info) {
+const InfoSlide = forwardRef<HTMLLIElement, info>(({ title, url, price, quant, int, acom, desc }, ref) => {
     return (
-        <li className={styles.infoCardSlide}>
+        <li className={styles.infoCardSlide} ref={ref}>
             <div className={`${styles.title_container} d-flex align-items-center justify-content-between`}>
                 <h3>{title}</h3>
 
@@ -50,6 +51,6 @@ function InfoSlide({ title, url, price, quant, int, acom, desc }: info) {
             <p className={`${styles.description} text-center`}>{desc}</p>
         </li>
     )
-}
+})
 
 export default InfoSlide

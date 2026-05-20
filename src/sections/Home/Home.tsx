@@ -15,10 +15,16 @@ import pao from "../../assets/img/info-slide/pao.webp"
 import InfoSlide from "./InfoSlide/InfoSlide"
 
 import styles from "./Home.module.css"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function Home() {
     const urlImgList: string[] = [coffee, coxinha, bolo,croassant, pedacoBolo, pao]
+
+    const imgItemRef = useRef<HTMLLIElement>(null)
+    const infoItemRef = useRef<HTMLLIElement>(null)
+
+    const [imgWidth, setImgWidth] = useState(0)
+    const [infoWidth, setInfoWidth] = useState(0)
 
     const [currentIndex, setCurrentIndex] = useState<number>(0)
 
@@ -34,8 +40,28 @@ function Home() {
         }
     }
 
-    let containerImgWidth = (330+10) * currentIndex
-    let containerInfoWidth = (240+10) * currentIndex
+    useEffect(() => {
+        const updateSizes = () => {
+            if(imgItemRef.current) {
+                const rect = imgItemRef.current.getBoundingClientRect()
+                setImgWidth(rect.width + 10)
+            }
+
+            if(infoItemRef.current) {
+                const rect = infoItemRef.current.getBoundingClientRect()
+                setInfoWidth(rect.width + 10)
+            }
+        }
+
+        updateSizes()
+
+        window.addEventListener("resize", updateSizes)
+
+        return () => window.removeEventListener("resize", updateSizes)
+    }, [])
+
+    let containerImgWidth = imgWidth * currentIndex
+    let containerInfoWidth = infoWidth * currentIndex
 
     // Touch
 
@@ -62,10 +88,10 @@ function Home() {
 
     return (
         <section className={`${styles.home_section} d-flex flex-column`} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-            <div className="d-flex flex-column align-items-center">
+            <div className={`${styles.desktop_home_container} d-flex flex-column align-items-center`}>
                 <div className={`${styles.slider_container_img} overflow-hidden position-relative`}>
                     <ul className={`${styles.slider_img} d-flex position-absolute`} style={{ transform: `translateX(-${containerImgWidth}px)` }}>
-                        <li className={styles.slider_item}>
+                        <li className={styles.slider_item} ref={imgItemRef}>
                             <img src={img1} alt="Mesa com café e outros"/>
                         </li>
 
@@ -93,7 +119,7 @@ function Home() {
 
                 <div className={`${styles.slider_container_info} overflow-hidden position-relative`}>
                     <ul className={`${styles.slider_info} d-flex position-absolute`} style={{ transform: `translateX(-${containerInfoWidth}px)` }}>
-                        <InfoSlide title="Cappuccino Especial" url={urlImgList[0]} price="R$12,90" quant="300ML" int="Intensidade Média" acom="Chocolate" desc="Café expresso com leite vaporizado, chocolate e canela." />
+                        <InfoSlide ref={infoItemRef} title="Cappuccino Especial" url={urlImgList[0]} price="R$12,90" quant="300ML" int="Intensidade Média" acom="Chocolate" desc="Café expresso com leite vaporizado, chocolate e canela." />
 
                         <InfoSlide title="Salgados Artesanais" url={urlImgList[1]} price="R$18,90" quant="6 Unidades" int="Frito na Hora" acom="Molho Especial" desc="Coxinhas e quibes dourados, crocantes por fora e recheados" />
 

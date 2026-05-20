@@ -4,18 +4,11 @@ ul {
 
 .home_section {
     padding-top: 30px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0,0,0,0.651)), url("../../assets//img/texturas/fundo-2.webp");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 .slider_container_img {
-    /* width: 330px;
-    height: 170px; */
-
     width: min(90vw, 900px);
-    height: clamp(170px, 40vw, 450px);
+    height: clamp(190px, 45vw, 480px);
 }
 
 .slider_img, .slider_info {
@@ -24,11 +17,8 @@ ul {
 }
 
 .slider_item {
-    /* width: 330px;
-    height: 170px; */
-
     width: min(90vw, 900px);
-    height: clamp(170px, 40vw, 450px);
+    height: clamp(190px, 45vw, 480px);
 }
 
 .slider_item > img {
@@ -39,19 +29,10 @@ ul {
 }
 
 .slider_container_info {
-    /* width: 240px;
-    height: 380px;
-
-    margin-top: 10px; */
-
     width: min(90vw, 240px);
     height: 380px;
 
     margin-top: 20px;
-}
-
-.slider_info {
-    left: 0px;
 }
 
 .slideControl_container {
@@ -70,4 +51,49 @@ ul {
 
 .slideControl_container > button > svg {
     fill: rgba(255, 255, 255, 0.489);
+}
+
+/* Estilo Responsivo */
+
+@media (min-width: 992px) {
+    .home_section {
+        padding: 0px;
+    }
+
+    .desktop_home_container {
+        padding-top: 50px;
+        
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .slider_container_info {
+        width: min(90vw, 290px);
+        height: 480px;
+
+        margin-top: 0px;
+    }
+
+    .slideControl_container {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding-left: 480px;
+
+        justify-content: start !important;
+    }
+
+    .slideControl_container > button {
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .slideControl_container > button:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .slideControl_container > button > svg {
+        width: 30px;
+        fill: rgba(255, 255, 255, 0.489);
+    }
 }

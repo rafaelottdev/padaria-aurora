@@ -1,13 +1,19 @@
 .category_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../../assets//img/texturas/fundo-2.webp");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat; */
+}
+
+.category_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .category_list {
     width: 100%;
+    max-width: 450px;
     height: 30px;
 
     gap: 1px;
@@ -21,10 +27,11 @@
 }
 
 .category_list > li {
-    flex: 1;
+    flex: 1 1 0
 }
 
 .category_list > li > a {
+    width: 100%;
     height: 100%;
 
     padding: 0px 6px;
@@ -42,7 +49,8 @@
 }
 
 .category_body {
-    padding: 20px 30px;
+    max-width: 1200px;
+    padding: 30px;
 
     background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)), url("../../assets/img/info-slide/fundo-info-slide.webp");
 

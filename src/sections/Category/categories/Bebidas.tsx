@@ -27,7 +27,7 @@ const Bebidas = () => {
             <CategoryCard 
                 img={img3} 
                 title="Coca-Cola Gelada" 
-                desc="Refrescância intensa e sabor clássico para acompanhar qualquer momento."  
+                desc="Refrescância intensa e sabor clássico."  
                 price="R$ 6,90"
                 tag="🧊 Bem Gelada"
             />

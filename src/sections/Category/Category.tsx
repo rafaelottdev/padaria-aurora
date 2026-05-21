@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom"
 
 function Category() {
     return (
-        <section className={styles.category_section}>
+        <section className={styles.category_section} id="category">
             <div className={styles.category_header}>
                 <ul className={`${styles.category_list} d-flex justify-content-center`}>
                     <li>

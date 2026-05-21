@@ -5,7 +5,7 @@ import Location from "./Location/Location"
 
 function Contact() {
     return (
-        <section className={`${styles.contact_section} d-flex flex-column flex-lg-row justify-content-lg-between align-items-center align-items-lg-start`}>
+        <section id="contact" className={`${styles.contact_section} d-flex flex-column flex-lg-row justify-content-lg-between align-items-center align-items-lg-start`}>
             <FormContact />
 
             <Location />

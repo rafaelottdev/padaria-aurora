@@ -2,7 +2,7 @@ import styles from "./About.module.css"
 
 function About() {
     return (
-        <section className={`${styles.about_section} d-flex flex-column align-items-center`}>
+        <section id="about" className={`${styles.about_section} d-flex flex-column align-items-center`}>
             <div className={styles.about_container}>
                 <div className={`${styles.about_title_wrapp} d-flex align-items-center`}>
                     <svg viewBox="0 0 128 128" fill="none">

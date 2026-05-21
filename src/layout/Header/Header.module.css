@@ -28,6 +28,10 @@
     color: rgba(255, 255, 255, 0.90);
 }
 
+.link_menu:hover {
+    color: rgb(255, 255, 255);
+}
+
 .menu_btn {
     font-size: 12px;
     background-color: #9A6700;

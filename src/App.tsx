@@ -21,6 +21,3 @@ function App() {
 }
 
 export default App
-
-
-// layout desktop home - category (diminuir e aumentar font-size via media query) pra mobile - layout responsive desktop Contact

@@ -10,7 +10,7 @@ type cardInfo = {
 
 function CategoryCard({ img, title, desc, price, tag }: cardInfo) {
     return (
-        <li className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+        <li className={`${styles.card} col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center`}>
             <div className={styles.card_container}>
                 <div className={`${styles.img_wrapp} w-100`}>
                     <img src={img} className="w-100 h-100" />

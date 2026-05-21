@@ -34,7 +34,7 @@ function FormContact() {
                     <textarea id="request" maxLength={95} className={`${styles.input} ${styles.textarea_input}`}></textarea>
                 </div>
 
-                <button>Enviar</button>
+                <button type="button" onClick={(e) => e.preventDefault()}>Enviar</button>
             </form>
         </section>
     )

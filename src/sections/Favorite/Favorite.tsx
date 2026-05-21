@@ -7,7 +7,7 @@ import img3 from "../../assets/img/favoritos-casa/cafe-1.webp"
 
 function Favorite() {
     return (
-        <section className={`${styles.favorite_section} d-flex justify-content-center`}>
+        <section id="favorite" className={`${styles.favorite_section} d-flex justify-content-center`}>
             <div className={`${styles.favorite_wrapp} position-relative`}>
                 <div className={`${styles.top_background} w-100 position-absolute top-0 left-0`}></div>
 

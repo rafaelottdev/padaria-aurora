@@ -21,6 +21,7 @@
 
 .location_info_wrapp > p {
     margin-bottom: 15px;
+    text-align: center;
     font-size: 16px;
     font-family: Lancelot, sans-serif;
     letter-spacing: .5px;
@@ -43,4 +44,27 @@
     font-family: Lancelot, sans-serif;
     letter-spacing: .5px;
     color: rgba(255, 255, 255, 0.800);
+}
+
+@media (min-width: 992px) {
+    .location_section {
+        width: 380px;
+    }
+
+    .location_img_wrapp {
+        width: 330px;
+        height: 280px;
+    }
+
+    .location_img_wrapp > img {
+        border-radius: 10px;
+    }
+
+    .location_info_wrapp > p {
+        font-size: 18px;
+    }
+
+    .contact_info {
+        font-size: 16px;
+    }
 }

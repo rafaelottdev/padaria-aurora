@@ -24,7 +24,7 @@
 }
 
 .link_menu {
-    letter-spacing: .5px;
+    letter-spacing: .5px !important;
     color: rgba(255, 255, 255, 0.90);
 }
 
@@ -89,7 +89,7 @@
     }
 
     .desktop_list {
-        margin-left: 330px !important;
+        margin-left: 325px !important;
         list-style: none;
         gap: 60px;
     }
@@ -97,9 +97,9 @@
     .link_menu {
         padding: 10px;
 
-        font-size: 18px;
+        font-size: 17px;
         text-decoration: none;
-        letter-spacing: .5px;
+        letter-spacing: 1px !important;
 
         color: rgba(255, 255, 255, 0.83);
     }

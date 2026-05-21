@@ -12,14 +12,16 @@ function FormContact() {
             </div>
 
             <form className={`${styles.form} d-flex flex-column`}>
-                <div className="d-flex flex-column">
-                    <label htmlFor="name" className={styles.desc_input}>Nome</label>
-                    <input type="text" id="name" maxLength={30} className={styles.input} />
-                </div>
-
-                <div className="d-flex flex-column">
-                    <label htmlFor="email" className={styles.desc_input}>Email</label>
-                    <input type="email" id="email" maxLength={40} className={styles.input} />
+                <div className={`${styles.name_email_container}`}>
+                    <div className="d-flex flex-column">
+                        <label htmlFor="name" className={styles.desc_input}>Nome</label>
+                        <input type="text" id="name" maxLength={30} className={styles.input} />
+                    </div>
+                    
+                    <div className="d-flex flex-column">
+                        <label htmlFor="email" className={styles.desc_input}>Email</label>
+                        <input type="email" id="email" maxLength={40} className={styles.input} />
+                    </div>
                 </div>
 
                 <div className="d-flex flex-column">

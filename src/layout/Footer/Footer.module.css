@@ -1,0 +1,9 @@
+.footer_p {
+    font-size: 12px;
+}
+
+@media (min-width: 992px) {
+    .footer_p {
+        font-size: 16px;
+    }
+}

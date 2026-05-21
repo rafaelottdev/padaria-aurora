@@ -1,7 +1,9 @@
+import styles from "./Footer.module.css"
+
 function Footer() {
     return (
         <footer className="w-100 py-3 bg-black d-flex align-items-center justify-content-center">
-            <p className="text-light" style={{ fontSize: "12px" }}>Feito por @Rafaelottdev. Todos os direitos reservados</p>
+            <p className={`${styles.footer_p} text-light`}>Feito por @Rafaelottdev. Todos os direitos reservados</p>
         </footer>
     )
 }
